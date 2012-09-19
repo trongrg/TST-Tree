@@ -1,0 +1,6 @@
+*.zip
+*.rar
+*.o
+.DS_Store
+main-list
+main-tree

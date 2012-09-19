@@ -1,0 +1,40 @@
+[user]
+  name = Trong Tran
+  email = trongrg@gmail.com
+[alias]
+  ci = commit
+  ca = commit --amend
+  co = checkout
+  br = branch
+  st = status --short
+  lg = log --oneline --decorate -n 20
+  wd = diff --word-diff
+  wdc = diff --word-diff --cached
+  dc = diff --cached
+  pom = push origin master
+  phm = push heroku master
+  ru = remote update
+  ruo = remote update origin
+  pim = push internal master
+[github]
+  user = trongrg
+[color]
+  diff = auto
+  status = auto
+[color "status"]
+  changed = yellow
+  added = green
+  untracked = red
+[diff]
+  tool = diffmerge
+[difftool "diffmerge"]
+  cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[mergetool "diffmerge"]
+  trustexitcode = false
+  cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+[merge]
+  tool = diffmerge
+[mergetool]
+  keepBackup = false
+[core]
+  editor = /usr/bin/vim
