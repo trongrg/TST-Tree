@@ -1,0 +1,26 @@
+Crossword Assistant
+Assignment 2, COSC2085 Programming Techniques
+Copyright 2010 s3245848 Tran Van Trong, s3255132 Huynh Quang Dung
+RMIT International University Vietnam
+This assignment includes software developed by the above mentioned
+student(s.)
+
+This software uses the Ternary Search Tree (TST) algorithm which is documented
+in the artical "Ternary Search Trees"
+
+This software uses the self-balancing algorithm of AVL tree, which 
+can be found the article "AVL tree" on wikipedia
+
+This software use the function "ReadRestOfLine", credit to justins on
+cboard.cprogramming.com 
+http://cboard.cprogramming.com/c-programming/90007-clear-buffer.html
+
+
+REFERENCES
+
+Bentley, J & Sedgewick, B, April 01, 1998, "Ternary Search Tree" 
+viewed 18 December 2010
+<http://www.drdobbs.com/184410528;jsessionid=EU0H1JLCEFWIFQE1GHPCKH4ATMY32JVN>
+
+Wikipedia, 2010, "AVL Tree", viewed 20 December 2010
+http://en.wikipedia.org/wiki/AVL_tree 

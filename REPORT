@@ -1,0 +1,41 @@
+Crossword Assistant
+Assignment 2, COSC2085 Programming Techniques
+Copyright 2010 s3245848 Tran Van Trong, s3255132 Huynh Quang Dung
+RMIT International University Vietnam
+Programming Principles 2a 
+
+FEATURES IMPLEMENTED:
+
+Instead of implementing a binary search tree, we decided to implement a ternary
+search tree. Ternary search tree is more efficient in partial match searching.
+
+The ternary search tree is a combination of binary search tree and digital search
+tree. Bentley and Sedgewick (1998) state that it utilize the time efficiency of 
+digital search tree and space efficiency of binary search tree. 
+
+Ternary search tree has 3 branches: left child, middle child and right child.
+
+Each node in the ternary search tree contains a single character which create
+the route to the stored words
+
+The leaves of the ternary search tree stores the words
+
+Some nodes which are not leaves can store words as well (for examle foot and foo
+are stored, the second 'o' node will store "foo")
+
+When inserting a word to a root, the first character of the word will be compared 
+with the root's character. There are 3 possible cases: 
+	+less: insert the word to the left child node
+	+greater: insert the word to the right child node
+	+equal: the tree contains the node already, insert the next character into
+	middle child.
+If the node is null, create a new node to store the current character. If the end of
+the word is reached, store the word into the tree.
+
+The implementation of this ternary search tree in this assignment use the AVL tree's
+algorithm to self balance. Each node contains a height, to determine if the rotations
+are needed.
+
+To remove the word from the tree, each node has a parent. After finding the word,
+if the removed word is found, delete all the nodes that does not connect to any
+other words, starting at the leaf
