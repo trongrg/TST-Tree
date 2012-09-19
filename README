@@ -1,0 +1,75 @@
+Crossword Assistant
+Assignment 2, COSC2085 Programming Techniques
+Copyright 2010 s3245848 Tran Van Trong, s3255132 Huynh Quang Dung
+RMIT International University Vietnam
+Programming Principles 2a 
+
+ASSIGNMENT INCLUDE
+
+- a self-balancing ternary search tree data structure and an unordered
+linked list data structure.
+  +The linked list and the ternary search tree have a same interface. 
+  +The main program can work with either of the two data structures, without modification.
+
+- the Makefile supports two main targets: 
+  +one target ("main-list") for building the program with the linked list
+  +one target ("main-tree") for building the program with the binary tree
+If you do "make all", both targets are build.
+
+- the ternary search tree is required to support inorder, postorder 
+and preorder (root->left child->mid child->right child) traversal.
+
+- the 3 traversal functions are able to execute a given function 
+on each element (given a function pointer)
+
+- main-tree supports display the whole tree in 3 mode: inorder, preorder and postorder
+
+
+APPLICATION STRUCTURE
+
+-modular wordfind application with ternary search tree data structure 
+to store dictionary words
+
+   source file:
+   
+      wordfind.c 
+      wordset.h 
+      wordset.c 
+      tstnode.h 
+      tstnode.c
+
+   compile with:
+
+      make main-tree
+
+   run with:
+
+      ./main-tree
+
+   operation:
+
+      see ./main-tree -h
+
+
+modular wordfind application with (unordered) linked list data structure to store dictionary words
+
+   source files:
+   
+      wordfind.c 
+      wordset.h 
+      wordset.c 
+      llnode.h 
+      llnode.c
+
+   compile with:
+
+      make main-list
+
+   run with:
+
+      ./main-list
+
+   operation:
+
+      see ./main-list -h
+      
